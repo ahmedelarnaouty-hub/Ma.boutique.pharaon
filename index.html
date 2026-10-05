@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ma.boutique.pharaon | Boutique</title>
+    <title>Ma.boutique.pharaon | Luxury Boutique</title>
     <meta
       name="description"
-      content="Curated luxury fashion, accessories, and statement pieces from Ma.boutique.pharaon."
+      content="Luxury boutique storefront for Ma.boutique.pharaon featuring curated fashion, accessories, and elevated essentials."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="topbar">
@@ -35,7 +35,7 @@
           <a href="#contact">Contact</a>
         </nav>
 
-        <button class="cart-btn" aria-label="Shopping cart">
+        <button class="cart-btn" aria-label="Open shopping cart">
           Cart <span id="cart-count">0</span>
         </button>
       </div>
@@ -45,10 +45,10 @@
       <section class="hero container">
         <div class="hero-copy">
           <p class="eyebrow">Luxury boutique</p>
-          <h1>Elegance curated for your everyday moments.</h1>
+          <h1>Elegance carefully curated for your lifestyle.</h1>
           <p class="lead">
-            Discover handpicked statement pieces, refined essentials, and timeless
-            accessories designed to elevate your personal style.
+            Discover signature fashion, elevated essentials, and refined accessories designed
+            to feel timeless, personal, and unforgettable.
           </p>
 
           <div class="cta-row">
@@ -58,12 +58,12 @@
 
           <div class="hero-metrics">
             <div>
-              <strong>1.5k+</strong>
+              <strong>1.8k+</strong>
               <span>happy clients</span>
             </div>
             <div>
-              <strong>250+</strong>
-              <span>exclusive items</span>
+              <strong>320+</strong>
+              <span>curated drops</span>
             </div>
             <div>
               <strong>4.9/5</strong>
@@ -107,6 +107,13 @@
           <a href="#contact" class="text-link">Book a private styling call</a>
         </div>
 
+        <div class="filters" aria-label="Product filters">
+          <button class="filter-btn active" type="button" data-filter="all">All</button>
+          <button class="filter-btn" type="button" data-filter="dresses">Dresses</button>
+          <button class="filter-btn" type="button" data-filter="accessories">Accessories</button>
+          <button class="filter-btn" type="button" data-filter="shoes">Shoes</button>
+        </div>
+
         <div class="product-grid" id="product-grid"></div>
       </section>
 
@@ -117,18 +124,18 @@
           <p class="eyebrow">About the boutique</p>
           <h2>Refined fashion with a personal touch.</h2>
           <p>
-            At Ma.boutique.pharaon, we design every encounter around confidence,
-            beauty, and individuality. Our collections blend timeless silhouettes with
-            contemporary luxury to create looks that feel both effortless and unforgettable.
+            At Ma.boutique.pharaon, each piece is selected with intention and style heritage in mind.
+            We blend timeless silhouettes with contemporary elegance to help every client feel
+            elevated, confident, and entirely themselves.
           </p>
           <p>
-            From statement accessories to elegant dresses and elevated essentials,
-            each item is selected with intention and curated for modern wardrobes.
+            From statement accessories to polished staples, our boutique experiences are designed around
+            quality, modern luxury, and a highly personal service.
           </p>
           <ul class="check-list">
             <li>Curated premium brands</li>
             <li>Exclusive seasonal drops</li>
-            <li>Boutique styling guidance</li>
+            <li>Personal styling guidance</li>
           </ul>
         </div>
       </section>
@@ -175,15 +182,15 @@
 
           <div class="testimonial-grid">
             <blockquote>
-              “The quality and finish are exceptional. It feels like true luxury without effort.”
+              “The quality is exceptional and every detail feels luxurious. I keep coming back.”
               <footer>— Sarah K.</footer>
             </blockquote>
             <blockquote>
-              “Every package feels personal and beautifully curated. The styling advice was invaluable.”
+              “The shopping experience is thoughtful, personal, and beautifully curated.”
               <footer>— Layla M.</footer>
             </blockquote>
             <blockquote>
-              “My favorite boutique for elevated essentials and standout statement pieces.”
+              “A boutique that feels elevated, modern, and completely true to my style.”
               <footer>— Hana R.</footer>
             </blockquote>
           </div>
@@ -202,6 +209,25 @@
         </form>
       </section>
     </main>
+
+    <aside class="cart-drawer" aria-label="Shopping cart panel">
+      <div class="cart-header">
+        <h3>Your cart</h3>
+        <button type="button" class="close-cart" aria-label="Close cart">×</button>
+      </div>
+
+      <div class="cart-items" id="cart-items">
+        <p class="empty-cart">Your cart is empty.</p>
+      </div>
+
+      <div class="cart-summary">
+        <div>
+          <span>Subtotal</span>
+          <strong id="cart-total">AED 0</strong>
+        </div>
+        <button type="button" class="btn btn-primary checkout-btn">Checkout</button>
+      </div>
+    </aside>
 
     <footer class="site-footer">
       <div class="container footer-grid">
