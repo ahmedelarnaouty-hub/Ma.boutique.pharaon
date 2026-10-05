@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart | Ma.boutique.pharaon</title>
-    <meta name="description" content="Review your selected boutique items before checkout." />
+    <title>Contact | Ma.boutique.pharaon</title>
+    <meta name="description" content="Get in touch with Ma.boutique.pharaon for styling support or boutique inquiries." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,31 +34,38 @@
       </div>
     </header>
 
-    <main class="container main-page cart-page">
+    <main class="container main-page contact-page">
       <section class="page-hero small-hero">
-        <p class="eyebrow">Your cart</p>
-        <h1>Ready for checkout.</h1>
+        <p class="eyebrow">Contact</p>
+        <h1>Let’s find your next signature piece.</h1>
       </section>
 
-      <section class="cart-layout">
-        <div class="cart-list" id="cart-list"></div>
+      <section class="contact-grid">
+        <div class="contact-card">
+          <h3>Book a styling call</h3>
+          <p>Tell us about your style and we’ll help you curate your perfect wardrobe.</p>
+          <ul>
+            <li>Email: hello@boutique-pharaon.com</li>
+            <li>Phone: +971 55 123 4567</li>
+            <li>Location: Downtown Boutique, Dubai</li>
+          </ul>
+        </div>
 
-        <aside class="order-summary">
-          <h3>Order summary</h3>
-          <div class="summary-row">
-            <span>Subtotal</span>
-            <strong id="subtotal">AED 0</strong>
-          </div>
-          <div class="summary-row">
-            <span>Shipping</span>
-            <strong>AED 25</strong>
-          </div>
-          <div class="summary-row total-row">
-            <span>Total</span>
-            <strong id="total">AED 25</strong>
-          </div>
-          <button class="btn btn-primary checkout-btn" type="button">Proceed to checkout</button>
-        </aside>
+        <form class="contact-form" id="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="Your email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
       </section>
     </main>
 

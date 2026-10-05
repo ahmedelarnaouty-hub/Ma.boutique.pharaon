@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart | Ma.boutique.pharaon</title>
-    <meta name="description" content="Review your selected boutique items before checkout." />
+    <title>Shop | Ma.boutique.pharaon</title>
+    <meta name="description" content="Browse luxury essentials and signature pieces from Ma.boutique.pharaon." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,31 +34,23 @@
       </div>
     </header>
 
-    <main class="container main-page cart-page">
+    <main class="container main-page">
       <section class="page-hero small-hero">
-        <p class="eyebrow">Your cart</p>
-        <h1>Ready for checkout.</h1>
+        <p class="eyebrow">Shop</p>
+        <h1>Curated wardrobe essentials.</h1>
       </section>
 
-      <section class="cart-layout">
-        <div class="cart-list" id="cart-list"></div>
+      <section class="shop-controls">
+        <div class="filters" aria-label="Product filters">
+          <button class="filter-btn active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="dresses" type="button">Dresses</button>
+          <button class="filter-btn" data-filter="accessories" type="button">Accessories</button>
+          <button class="filter-btn" data-filter="shoes" type="button">Shoes</button>
+        </div>
+      </section>
 
-        <aside class="order-summary">
-          <h3>Order summary</h3>
-          <div class="summary-row">
-            <span>Subtotal</span>
-            <strong id="subtotal">AED 0</strong>
-          </div>
-          <div class="summary-row">
-            <span>Shipping</span>
-            <strong>AED 25</strong>
-          </div>
-          <div class="summary-row total-row">
-            <span>Total</span>
-            <strong id="total">AED 25</strong>
-          </div>
-          <button class="btn btn-primary checkout-btn" type="button">Proceed to checkout</button>
-        </aside>
+      <section>
+        <div class="product-grid" id="shop-products"></div>
       </section>
     </main>
 
@@ -97,6 +89,15 @@
     <script src="script.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
 
 
 
