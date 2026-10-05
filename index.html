@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ma.boutique.pharaon | Boutique</title>
+    <meta
+      name="description"
+      content="Curated luxury fashion, accessories, and statement pieces from Ma.boutique.pharaon."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <a href="#home" class="brand" aria-label="Ma.boutique.pharaon home">Ma.boutique.pharaon</a>
+
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#collection">Collection</a>
+          <a href="#about">About</a>
+          <a href="#journal">Journal</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="cart-btn" aria-label="Shopping cart">
+          Cart <span id="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Luxury boutique</p>
+          <h1>Elegance curated for your everyday moments.</h1>
+          <p class="lead">
+            Discover handpicked statement pieces, refined essentials, and timeless
+            accessories designed to elevate your personal style.
+          </p>
+
+          <div class="cta-row">
+            <a href="#collection" class="btn btn-primary">Shop the collection</a>
+            <a href="#about" class="btn btn-secondary">Our story</a>
+          </div>
+
+          <div class="hero-metrics">
+            <div>
+              <strong>1.5k+</strong>
+              <span>happy clients</span>
+            </div>
+            <div>
+              <strong>250+</strong>
+              <span>exclusive items</span>
+            </div>
+            <div>
+              <strong>4.9/5</strong>
+              <span>client rating</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Boutique showcase image">
+          <div class="image-card main-card"></div>
+          <div class="floating-card">
+            <p>New arrival</p>
+            <strong>Maison Signature</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-strip">
+        <div class="container strip-grid">
+          <div>
+            <span>Free delivery</span>
+            <small>on orders above 250 AED</small>
+          </div>
+          <div>
+            <span>Worldwide shipping</span>
+            <small>carefully packed & insured</small>
+          </div>
+          <div>
+            <span>Styling support</span>
+            <small>personalized concierge</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="collection container" id="collection">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Featured collection</p>
+            <h2>Signature pieces for elevated living.</h2>
+          </div>
+          <a href="#contact" class="text-link">Book a private styling call</a>
+        </div>
+
+        <div class="product-grid" id="product-grid"></div>
+      </section>
+
+      <section class="story container" id="about">
+        <div class="story-image" aria-label="Boutique storefront"></div>
+
+        <div class="story-copy">
+          <p class="eyebrow">About the boutique</p>
+          <h2>Refined fashion with a personal touch.</h2>
+          <p>
+            At Ma.boutique.pharaon, we design every encounter around confidence,
+            beauty, and individuality. Our collections blend timeless silhouettes with
+            contemporary luxury to create looks that feel both effortless and unforgettable.
+          </p>
+          <p>
+            From statement accessories to elegant dresses and elevated essentials,
+            each item is selected with intention and curated for modern wardrobes.
+          </p>
+          <ul class="check-list">
+            <li>Curated premium brands</li>
+            <li>Exclusive seasonal drops</li>
+            <li>Boutique styling guidance</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="journal container" id="journal">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Style journal</p>
+            <h2>Fresh inspiration from the boutique.</h2>
+          </div>
+        </div>
+
+        <div class="journal-grid">
+          <article class="journal-card">
+            <div class="journal-thumb thumb-one"></div>
+            <div class="journal-body">
+              <span>Fashion edit</span>
+              <h3>How to build a capsule wardrobe that still feels luxurious.</h3>
+            </div>
+          </article>
+
+          <article class="journal-card">
+            <div class="journal-thumb thumb-two"></div>
+            <div class="journal-body">
+              <span>Styling guide</span>
+              <h3>Five accessory pieces that instantly elevate a minimalist look.</h3>
+            </div>
+          </article>
+
+          <article class="journal-card">
+            <div class="journal-thumb thumb-three"></div>
+            <div class="journal-body">
+              <span>Behind the scenes</span>
+              <h3>Designing a boutique experience rooted in elegance and comfort.</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <div class="container">
+          <p class="eyebrow">Client love</p>
+          <h2>Trusted by style-conscious customers.</h2>
+
+          <div class="testimonial-grid">
+            <blockquote>
+              “The quality and finish are exceptional. It feels like true luxury without effort.”
+              <footer>— Sarah K.</footer>
+            </blockquote>
+            <blockquote>
+              “Every package feels personal and beautifully curated. The styling advice was invaluable.”
+              <footer>— Layla M.</footer>
+            </blockquote>
+            <blockquote>
+              “My favorite boutique for elevated essentials and standout statement pieces.”
+              <footer>— Hana R.</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter container" id="contact">
+        <div>
+          <p class="eyebrow">Stay in touch</p>
+          <h2>Receive new arrivals and private offers.</h2>
+        </div>
+
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" aria-label="Email address" />
+          <button type="submit" class="btn btn-primary">Join now</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="#home" class="brand">Ma.boutique.pharaon</a>
+          <p>Luxury essentials for a refined lifestyle.</p>
+        </div>
+
+        <div>
+          <h4>Visit</h4>
+          <p>Downtown Boutique</p>
+          <p>Dubai, UAE</p>
+        </div>
+
+        <div>
+          <h4>Contact</h4>
+          <p>hello@boutique-pharaon.com</p>
+          <p>+971 55 123 4567</p>
+        </div>
+
+        <div>
+          <h4>Hours</h4>
+          <p>Mon - Sat</p>
+          <p>10:00 — 19:00</p>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> Ma.boutique.pharaon</span>
+        <span>Made for modern elegance</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
