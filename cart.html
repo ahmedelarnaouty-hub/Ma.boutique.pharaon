@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | Ma.boutique.pharaon</title>
-    <meta name="description" content="Get in touch with Ma.boutique.pharaon for styling support or boutique inquiries." />
+    <title>Panier | Ma.boutique.pharaon</title>
+    <meta name="description" content="Vérifiez les articles de votre panier avant de finaliser votre commande." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,54 +18,47 @@
       <div class="container nav">
         <a href="index.html" class="brand">Ma.boutique.pharaon</a>
 
-        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        <nav class="nav-links" aria-label="Main navigation">
-          <a href="index.html">Home</a>
-          <a href="products.html">Shop</a>
-          <a href="about.html">About</a>
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="products.html">Boutique</a>
+          <a href="about.html">À propos</a>
           <a href="contact.html">Contact</a>
-          <a href="cart.html">Cart <span class="nav-cart-count">0</span></a>
+          <a href="cart.html" aria-current="page">Panier <span class="nav-cart-count">0</span></a>
         </nav>
       </div>
     </header>
 
-    <main class="container main-page contact-page">
+    <main class="container main-page cart-page">
       <section class="page-hero small-hero">
-        <p class="eyebrow">Contact</p>
-        <h1>Let’s find your next signature piece.</h1>
+        <p class="eyebrow">Votre panier</p>
+        <h1>Prête à finaliser votre commande.</h1>
       </section>
 
-      <section class="contact-grid">
-        <div class="contact-card">
-          <h3>Book a styling call</h3>
-          <p>Tell us about your style and we’ll help you curate your perfect wardrobe.</p>
-          <ul>
-            <li>Email: hello@boutique-pharaon.com</li>
-            <li>Phone: +971 55 123 4567</li>
-            <li>Location: Downtown Boutique, Dubai</li>
-          </ul>
-        </div>
+      <section class="cart-layout">
+        <div class="cart-list" id="cart-list"></div>
 
-        <form class="contact-form" id="contact-form">
-          <label>
-            Name
-            <input type="text" name="name" placeholder="Your name" required />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" placeholder="Your email" required />
-          </label>
-          <label>
-            Message
-            <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
-          </label>
-          <button type="submit" class="btn btn-primary">Send message</button>
-        </form>
+        <aside class="order-summary">
+          <h3>Récapitulatif</h3>
+          <div class="summary-row">
+            <span>Sous-total</span>
+            <strong id="subtotal">0 AED</strong>
+          </div>
+          <div class="summary-row">
+            <span>Livraison</span>
+            <strong>25 AED</strong>
+          </div>
+          <div class="summary-row total-row">
+            <span>Total</span>
+            <strong id="total">25 AED</strong>
+          </div>
+          <button class="btn btn-primary checkout-btn" type="button">Passer la commande</button>
+        </aside>
       </section>
     </main>
 
@@ -73,13 +66,13 @@
       <div class="container footer-grid">
         <div>
           <a href="index.html" class="brand">Ma.boutique.pharaon</a>
-          <p>Luxury essentials for a refined lifestyle.</p>
+          <p>L'essentiel du luxe pour un style de vie raffiné.</p>
         </div>
 
         <div>
-          <h4>Visit</h4>
+          <h4>Adresse</h4>
           <p>Downtown Boutique</p>
-          <p>Dubai, UAE</p>
+          <p>Dubaï, Émirats arabes unis</p>
         </div>
 
         <div>
@@ -89,15 +82,15 @@
         </div>
 
         <div>
-          <h4>Hours</h4>
-          <p>Mon - Sat</p>
-          <p>10:00 — 19:00</p>
+          <h4>Horaires</h4>
+          <p>Du lundi au samedi</p>
+          <p>10h00 — 19h00</p>
         </div>
       </div>
 
       <div class="container footer-bottom">
         <span>© <span id="year"></span> Ma.boutique.pharaon</span>
-        <span>Made for modern elegance</span>
+        <span>Conçu pour une élégance moderne</span>
       </div>
     </footer>
 
