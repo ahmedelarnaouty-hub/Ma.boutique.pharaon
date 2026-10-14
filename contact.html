@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | Ma.boutique.pharaon</title>
-    <meta name="description" content="Learn about the story and philosophy behind Ma.boutique.pharaon." />
+    <title>Contact | Ma.boutique.pharaon</title>
+    <meta name="description" content="Get in touch with Ma.boutique.pharaon for styling support or boutique inquiries." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,42 +34,38 @@
       </div>
     </header>
 
-    <main class="container main-page">
+    <main class="container main-page contact-page">
       <section class="page-hero small-hero">
-        <p class="eyebrow">Our story</p>
-        <h1>Where refinement meets individuality.</h1>
+        <p class="eyebrow">Contact</p>
+        <h1>Let’s find your next signature piece.</h1>
       </section>
 
-      <section class="story story-page">
-        <div class="story-image"></div>
-        <div class="story-copy">
-          <p>
-            Ma.boutique.pharaon was founded to celebrate a more intentional way of dressing: a wardrobe that is elegant, expressive, and quietly timeless.
-          </p>
-          <p>
-            We believe in slow luxury—pieces selected with care, designed to move beautifully with daily life and still make a statement when it matters most.
-          </p>
-          <ul class="check-list">
-            <li>Modern luxury with classic roots</li>
-            <li>Thoughtful material selection</li>
-            <li>Personal, boutique-level guidance</li>
+      <section class="contact-grid">
+        <div class="contact-card">
+          <h3>Book a styling call</h3>
+          <p>Tell us about your style and we’ll help you curate your perfect wardrobe.</p>
+          <ul>
+            <li>Email: hello@boutique-pharaon.com</li>
+            <li>Phone: +971 55 123 4567</li>
+            <li>Location: Downtown Boutique, Dubai</li>
           </ul>
         </div>
-      </section>
 
-      <section class="values-grid">
-        <article>
-          <h3>Curated quality</h3>
-          <p>Each collection balances modern silhouettes with lasting craftsmanship and comfort.</p>
-        </article>
-        <article>
-          <h3>Personal service</h3>
-          <p>We help clients discover pieces that feel uniquely their own and effortlessly elevated.</p>
-        </article>
-        <article>
-          <h3>Quiet confidence</h3>
-          <p>Our collections are designed to help you feel composed, stylish, and unmistakably yourself.</p>
-        </article>
+        <form class="contact-form" id="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="Your email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
       </section>
     </main>
 

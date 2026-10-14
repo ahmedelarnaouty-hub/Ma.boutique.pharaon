@@ -1,81 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ma.boutique.pharaon | Luxury Boutique</title>
+    <title>Ma.boutique.pharaon | Boutique de luxe</title>
     <meta
       name="description"
-      content="Luxury boutique storefront for Ma.boutique.pharaon featuring curated fashion, accessories, and elevated essentials."
+      content="Ma.boutique.pharaon : mode de luxe, accessoires raffinés et pièces signature, sélectionnés avec soin pour un style intemporel."
+    />
+    <meta name="theme-color" content="#f7f1ec" />
+    <meta property="og:title" content="Ma.boutique.pharaon | Boutique de luxe" />
+    <meta property="og:description" content="Mode de luxe, accessoires raffinés et pièces signature." />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=1200&q=85"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="home">
+    <div class="announcement">
+      Livraison offerte dès 250 AED · Nouvelle collection disponible
+    </div>
+
     <header class="topbar">
       <div class="container nav">
-        <a href="#home" class="brand" aria-label="Ma.boutique.pharaon home">Ma.boutique.pharaon</a>
+        <a href="index.html" class="brand" aria-label="Ma.boutique.pharaon, accueil">Ma.boutique.pharaon</a>
 
-        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        <nav class="nav-links" aria-label="Main navigation">
-          <a href="#home">Home</a>
-          <a href="#collection">Collection</a>
-          <a href="#about">About</a>
-          <a href="#journal">Journal</a>
-          <a href="#contact">Contact</a>
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="index.html" aria-current="page">Accueil</a>
+          <a href="products.html">Boutique</a>
+          <a href="about.html">À propos</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html">Panier <span class="nav-cart-count">0</span></a>
         </nav>
-
-        <button class="cart-btn" aria-label="Open shopping cart">
-          Cart <span id="cart-count">0</span>
-        </button>
       </div>
     </header>
 
-    <main id="home">
+    <main>
       <section class="hero container">
         <div class="hero-copy">
-          <p class="eyebrow">Luxury boutique</p>
-          <h1>Elegance carefully curated for your lifestyle.</h1>
+          <p class="eyebrow">Maison de mode de luxe</p>
+          <h1>L'élégance, <em>pensée</em> pour une vie raffinée.</h1>
           <p class="lead">
-            Discover signature fashion, elevated essentials, and refined accessories designed
-            to feel timeless, personal, and unforgettable.
+            Découvrez une sélection de pièces signature, d'essentiels d'exception et d'accessoires
+            intemporels, choisis pour sublimer chaque instant de votre quotidien.
           </p>
 
           <div class="cta-row">
-            <a href="#collection" class="btn btn-primary">Shop the collection</a>
-            <a href="#about" class="btn btn-secondary">Our story</a>
+            <a href="products.html" class="btn btn-primary">Découvrir la collection</a>
+            <a href="about.html" class="btn btn-secondary">Notre histoire</a>
           </div>
 
           <div class="hero-metrics">
             <div>
-              <strong>1.8k+</strong>
-              <span>happy clients</span>
+              <strong>1,8k+</strong>
+              <span>clientes conquises</span>
             </div>
             <div>
               <strong>320+</strong>
-              <span>curated drops</span>
+              <span>pièces sélectionnées</span>
             </div>
             <div>
-              <strong>4.9/5</strong>
-              <span>client rating</span>
+              <strong>4,9/5</strong>
+              <span>note moyenne</span>
             </div>
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="Boutique showcase image">
-          <div class="image-card main-card"></div>
+        <div class="hero-visual">
+          <img
+            class="hero-image"
+            src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=1400&q=85"
+            srcset="
+              https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=700&q=85   700w,
+              https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=1000&q=85 1000w,
+              https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=1400&q=85 1400w,
+              https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=2000&q=85 2000w
+            "
+            sizes="(max-width: 900px) 100vw, 520px"
+            alt="Mannequin portant une tenue élégante de la nouvelle collection"
+            width="1400"
+            height="1750"
+            fetchpriority="high"
+            decoding="async"
+            data-fallback="1529139574466-a303027c1d8b"
+          />
           <div class="floating-card">
-            <p>New arrival</p>
+            <p>Nouveauté</p>
             <strong>Maison Signature</strong>
           </div>
         </div>
@@ -84,162 +108,185 @@
       <section class="featured-strip">
         <div class="container strip-grid">
           <div>
-            <span>Free delivery</span>
-            <small>on orders above 250 AED</small>
+            <span>Livraison offerte</span>
+            <small>dès 250 AED d'achat</small>
           </div>
           <div>
-            <span>Worldwide shipping</span>
-            <small>carefully packed & insured</small>
+            <span>Expédition internationale</span>
+            <small>emballage soigné et assuré</small>
           </div>
           <div>
-            <span>Styling support</span>
-            <small>personalized concierge</small>
+            <span>Conseil personnalisé</span>
+            <small>un service de stylisme dédié</small>
           </div>
         </div>
       </section>
 
-      <section class="collection container" id="collection">
+      <section class="container section-block reveal" id="categories">
         <div class="section-header">
           <div>
-            <p class="eyebrow">Featured collection</p>
-            <h2>Signature pieces for elevated living.</h2>
+            <p class="eyebrow">Nos univers</p>
+            <h2>Trouvez la pièce qui vous ressemble.</h2>
           </div>
-          <a href="#contact" class="text-link">Book a private styling call</a>
         </div>
 
-        <div class="filters" aria-label="Product filters">
-          <button class="filter-btn active" type="button" data-filter="all">All</button>
-          <button class="filter-btn" type="button" data-filter="dresses">Dresses</button>
-          <button class="filter-btn" type="button" data-filter="accessories">Accessories</button>
-          <button class="filter-btn" type="button" data-filter="shoes">Shoes</button>
+        <div class="category-grid">
+          <a href="products.html" class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=1000&q=85"
+              srcset="
+                https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=85   600w,
+                https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=1000&q=85 1000w,
+                https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=1400&q=85 1400w
+              "
+              sizes="(max-width: 900px) 100vw, 380px"
+              alt="Robe de soirée élégante"
+              loading="lazy"
+              decoding="async"
+              width="1000"
+              height="1250"
+              data-fallback="1496747611176-843222e1e57c"
+            />
+            <span class="category-label">Robes <small>Découvrir →</small></span>
+          </a>
+          <a href="products.html" class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1000&q=85"
+              srcset="
+                https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=85   600w,
+                https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1000&q=85 1000w,
+                https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1400&q=85 1400w
+              "
+              sizes="(max-width: 900px) 100vw, 380px"
+              alt="Sac en cuir de luxe"
+              loading="lazy"
+              decoding="async"
+              width="1000"
+              height="1250"
+              data-fallback="1584917865442-de89df76afd3"
+            />
+            <span class="category-label">Accessoires <small>Découvrir →</small></span>
+          </a>
+          <a href="products.html" class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?auto=format&fit=crop&w=1000&q=85"
+              srcset="
+                https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?auto=format&fit=crop&w=600&q=85   600w,
+                https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?auto=format&fit=crop&w=1000&q=85 1000w,
+                https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?auto=format&fit=crop&w=1400&q=85 1400w
+              "
+              sizes="(max-width: 900px) 100vw, 380px"
+              alt="Escarpins élégants"
+              loading="lazy"
+              decoding="async"
+              width="1000"
+              height="1250"
+              data-fallback="1543163521-1bf539c55dd2"
+            />
+            <span class="category-label">Chaussures <small>Découvrir →</small></span>
+          </a>
         </div>
-
-        <div class="product-grid" id="product-grid"></div>
       </section>
 
-      <section class="story container" id="about">
-        <div class="story-image" aria-label="Boutique storefront"></div>
+      <section class="container section-block reveal" id="featured">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Collection vedette</p>
+            <h2>Des pièces signature pour un style d'exception.</h2>
+          </div>
+          <a href="products.html" class="text-link">Voir toute la boutique →</a>
+        </div>
 
+        <div class="product-grid" id="featured-products"></div>
+      </section>
+
+      <section class="container story reveal" id="about-home">
+        <div class="story-media">
+          <img
+            src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1400&q=85"
+            srcset="
+              https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=700&q=85   700w,
+              https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1100&q=85 1100w,
+              https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1600&q=85 1600w
+            "
+            sizes="(max-width: 900px) 100vw, 560px"
+            alt="Intérieur de la boutique"
+            loading="lazy"
+            decoding="async"
+            width="1400"
+            height="1300"
+            data-fallback="1524504388940-b1c1722653e1"
+          />
+        </div>
         <div class="story-copy">
-          <p class="eyebrow">About the boutique</p>
-          <h2>Refined fashion with a personal touch.</h2>
+          <p class="eyebrow">Notre philosophie</p>
+          <h2>Un luxe qui vous ressemble.</h2>
           <p>
-            At Ma.boutique.pharaon, each piece is selected with intention and style heritage in mind.
-            We blend timeless silhouettes with contemporary elegance to help every client feel
-            elevated, confident, and entirely themselves.
+            Chez Ma.boutique.pharaon, nous associons lignes épurées, savoir-faire d'exception et conseil
+            personnalisé pour créer des pièces d'un luxe naturel et sans effort.
           </p>
           <p>
-            From statement accessories to polished staples, our boutique experiences are designed around
-            quality, modern luxury, and a highly personal service.
+            Chaque article est choisi pour allier élégance, confort et assurance : une garde-robe qui
+            parle avec douceur et laisse une impression durable.
           </p>
           <ul class="check-list">
-            <li>Curated premium brands</li>
-            <li>Exclusive seasonal drops</li>
-            <li>Personal styling guidance</li>
+            <li>Une sélection de marques d'exception</li>
+            <li>Des éditions saisonnières exclusives</li>
+            <li>Un accompagnement stylistique sur mesure</li>
           </ul>
-        </div>
-      </section>
-
-      <section class="journal container" id="journal">
-        <div class="section-header">
-          <div>
-            <p class="eyebrow">Style journal</p>
-            <h2>Fresh inspiration from the boutique.</h2>
-          </div>
-        </div>
-
-        <div class="journal-grid">
-          <article class="journal-card">
-            <div class="journal-thumb thumb-one"></div>
-            <div class="journal-body">
-              <span>Fashion edit</span>
-              <h3>How to build a capsule wardrobe that still feels luxurious.</h3>
-            </div>
-          </article>
-
-          <article class="journal-card">
-            <div class="journal-thumb thumb-two"></div>
-            <div class="journal-body">
-              <span>Styling guide</span>
-              <h3>Five accessory pieces that instantly elevate a minimalist look.</h3>
-            </div>
-          </article>
-
-          <article class="journal-card">
-            <div class="journal-thumb thumb-three"></div>
-            <div class="journal-body">
-              <span>Behind the scenes</span>
-              <h3>Designing a boutique experience rooted in elegance and comfort.</h3>
-            </div>
-          </article>
+          <a href="about.html" class="btn btn-secondary story-btn">En savoir plus</a>
         </div>
       </section>
 
       <section class="testimonials">
-        <div class="container">
-          <p class="eyebrow">Client love</p>
-          <h2>Trusted by style-conscious customers.</h2>
+        <div class="container reveal">
+          <p class="eyebrow">Elles nous font confiance</p>
+          <h2>L'avis de nos clientes.</h2>
 
           <div class="testimonial-grid">
             <blockquote>
-              “The quality is exceptional and every detail feels luxurious. I keep coming back.”
+              <span class="stars" aria-label="5 étoiles sur 5">★★★★★</span>
+              « La qualité et les finitions sont exceptionnelles. Le luxe, tout simplement. »
               <footer>— Sarah K.</footer>
             </blockquote>
             <blockquote>
-              “The shopping experience is thoughtful, personal, and beautifully curated.”
+              <span class="stars" aria-label="5 étoiles sur 5">★★★★★</span>
+              « Une sélection magnifique, un service attentionné et une boutique vraiment personnelle. »
               <footer>— Layla M.</footer>
             </blockquote>
             <blockquote>
-              “A boutique that feels elevated, modern, and completely true to my style.”
+              <span class="stars" aria-label="5 étoiles sur 5">★★★★★</span>
+              « Mon adresse préférée pour les essentiels raffinés et les tenues d'exception. »
               <footer>— Hana R.</footer>
             </blockquote>
           </div>
         </div>
       </section>
 
-      <section class="newsletter container" id="contact">
+      <section class="container newsletter reveal" id="newsletter">
         <div>
-          <p class="eyebrow">Stay in touch</p>
-          <h2>Receive new arrivals and private offers.</h2>
+          <p class="eyebrow">Restons en contact</p>
+          <h2>Recevez nos nouveautés et offres privées.</h2>
         </div>
 
         <form class="newsletter-form">
-          <input type="email" placeholder="Your email address" aria-label="Email address" />
-          <button type="submit" class="btn btn-primary">Join now</button>
+          <input type="email" placeholder="Votre adresse e-mail" aria-label="Adresse e-mail" required />
+          <button type="submit" class="btn btn-primary">Je m'inscris</button>
         </form>
       </section>
     </main>
 
-    <aside class="cart-drawer" aria-label="Shopping cart panel">
-      <div class="cart-header">
-        <h3>Your cart</h3>
-        <button type="button" class="close-cart" aria-label="Close cart">×</button>
-      </div>
-
-      <div class="cart-items" id="cart-items">
-        <p class="empty-cart">Your cart is empty.</p>
-      </div>
-
-      <div class="cart-summary">
-        <div>
-          <span>Subtotal</span>
-          <strong id="cart-total">AED 0</strong>
-        </div>
-        <button type="button" class="btn btn-primary checkout-btn">Checkout</button>
-      </div>
-    </aside>
-
     <footer class="site-footer">
       <div class="container footer-grid">
         <div>
-          <a href="#home" class="brand">Ma.boutique.pharaon</a>
-          <p>Luxury essentials for a refined lifestyle.</p>
+          <a href="index.html" class="brand">Ma.boutique.pharaon</a>
+          <p>L'essentiel du luxe pour un style de vie raffiné.</p>
         </div>
 
         <div>
-          <h4>Visit</h4>
+          <h4>Adresse</h4>
           <p>Downtown Boutique</p>
-          <p>Dubai, UAE</p>
+          <p>Dubaï, Émirats arabes unis</p>
         </div>
 
         <div>
@@ -249,15 +296,15 @@
         </div>
 
         <div>
-          <h4>Hours</h4>
-          <p>Mon - Sat</p>
-          <p>10:00 — 19:00</p>
+          <h4>Horaires</h4>
+          <p>Du lundi au samedi</p>
+          <p>10h00 — 19h00</p>
         </div>
       </div>
 
       <div class="container footer-bottom">
         <span>© <span id="year"></span> Ma.boutique.pharaon</span>
-        <span>Made for modern elegance</span>
+        <span>Conçu pour une élégance moderne</span>
       </div>
     </footer>
 
