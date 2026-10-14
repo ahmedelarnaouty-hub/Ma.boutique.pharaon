@@ -437,7 +437,7 @@ p {
 .story-image {
   min-height: 520px;
   border-radius: 30px;
-  background-image: url("https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1100&q=80");
+  background-image: url("https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1800&q=85");
   background-size: cover;
   background-position: center;
   box-shadow: var(--shadow);
